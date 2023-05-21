@@ -34,5 +34,11 @@ class AccountSeeder extends Seeder
 
         }
 
+        DB::table('accounts_admin')->insert([
+            'full_name' => "Administrator",
+            'email' => "admin@gmail.com",
+            'password' => "admin123"
+        ]);
+
     }
 }
